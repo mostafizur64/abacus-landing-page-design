@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --heading-color: #3E3E3E;
+    --primary-color: #0A0826;
+    --secondary-color: #3F87F5;
+    --pragraph-color: #6C6C6C;
+    --sub-heading-color: #231D4F;
+    --sub-pragraph-color: #848199;
+    --text-light: #6C6C6C;
+    --text-dark: #383838;
+    --extra-light: #E5E5E5;
+    --white: #ffffff;
+    --max-width: 1200px;
+    --header-font: "Roboto", sans-serif;
+    --sub-description-font: "Inter", sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.section__container {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 5rem 1rem;
+}
+
+.section__header {
+    margin-bottom: 0.5rem;
+    font-size: 38px;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.header__description {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--pragraph-color);
+}
+
+.btn {
+    background-color: #F496D1;
+    color: var(--secondary-color);
+    width: 207px;
+    height: 45px;
+    border-radius: 24px;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--heading-color);
+}
+
+img {
+    display: flex;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.3s;
+
+}
+
+ul {
+    list-style: none;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--extra-light);
+}
+
+nav {
+    position: fixed;
+    isolation: isolate;
+    width: 100%;
+    max-width: var(--max-width);
+    /* margin: auto; */
+    margin-inline: auto;
+    z-index: 9;
+}
+
+.nav__header {
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--extra-light);
+}
+
+.nav__menu__btn {
+    font-size: 25px;
+    color: var(--heading-color);
+    cursor: pointer;
+}
+
+.nav__links {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: var(--pragraph-color);
+    transition: 0.5s;
+    z-index: -1;
+    transform: translateY(-100%);
+
+}
+
+.nav__links.open {
+    transform: translateY(0);
+}
+
+.nav__links a {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--heading-color);
+
+}
+
+.nav__links a:hover {
+    color: var(--white);
+}
+/* header section  */
+.swiper-slide {
+    position: relative;
+    text-align: center;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 60vh;
+   
+}
+
+.slide-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: var(--white);
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.slide-text h3{
+    font-size: 30px;
+    margin-bottom: 1rem;
+   
+}
+.slide-text p{
+    font-size: 16px;
+    margin: 0.5rem;
+}
+.header__btn{
+    background-color: var(--white);
+    color: var(--secondary-color);
+    border-radius: 5px;
+    height: 48px;
+    width: 168px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+.every__moment{
+    display: grid;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+}
+.every__moment button{
+    /* text-align: center; */
+    background-color: red;
+    height: 48px;
+    width: 180px;
+    display: flex;
+    gap: 1rem;
+    align-items: center ;
+    justify-content: center;
+ 
+}
+@media (width > 768px) {
+
+    nav{
+        position: static;
+        padding: 2rem 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+    .nav__header{
+        padding: 0;
+        background-color: transparent;
+    }
+
+    .nav__menu__btn{
+        display: none;
+    }
+    .nav__links{
+        position: static;
+        padding: 0;
+        flex-direction: row;
+        justify-content: flex-end;
+        background-color: transparent;
+        gap: 3rem;
+        transform: none;
+
+    }
+    .swiper-slide img {
+        width: 100%;
+        height: auto;
+    }
+    .slide-text h3{
+        font-size: 48px;
+        line-height: 50px;
+        margin-bottom: 1rem;
+       
+    }
+    .every__moment{
+        grid-template-columns: repeat(2,1fr);
+    }
+}

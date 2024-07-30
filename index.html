@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Abacus Convention center</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav__header">
+            <div class="nav__logo">
+                <a href="#" class="logo">Abacus Convention center</a>
+            </div>
+            <div class="nav__menu__btn" id="menu-btn">
+                <i class="ri-menu-line"></i>
+            </div>
+
+        </div>
+        <ul class="nav__links" id="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#subscribe">Subscribe</a></li>
+        </ul>
+    </nav>
+
+    <div class="header" id="home">
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img src="/assets/header-img.jpg" alt="">
+                    <div class="slide-text">
+                        <h3>The perfect venue for your <br>
+                            next event</h3>
+                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.<br /> Velit officia
+                            consequat duis enim velit </p>
+                        <button class="header__btn">Book Now</button>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="/assets/header-img.jpg" alt="">
+                    <div class="slide-text">text.</div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="/assets/header-img.jpg" alt="">
+                    <div class="slide-text">dddd.</div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="/assets/header-img.jpg" alt="">
+                    <div class="slide-text">ddd</div>
+                </div>
+                ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </div>
+
+    <!-- Every Moment section  -->
+    <div class="every__moment section__container" id="aboutus">
+        <div>
+            <img src="/assets/aboutUs.jpg" alt="aboutus">
+        </div>
+        <div>
+            <h3 class="section__header">Every moment is Precious </h3>
+            <p class="header__description">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis
+                enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+            <button>Explore our Album <i class="ri-arrow-right-line"></i></button>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
